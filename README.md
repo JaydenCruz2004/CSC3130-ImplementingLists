@@ -2,11 +2,8 @@
 
 ## Deadline: Saturday, February 15, 2024, 9:59 PM
 
-### Objectives:
-- Familiarize yourself with the basics of List data structures (i.e., creation, addition, removal, traversal).
-  
-## Description:
-This assignment involves implementing different types of lists and manipulating song data in Java. You will create classes to represent a Song and then implement Array-based, Singly Linked, and Doubly Linked lists to store and manage collections of these songs. Additionally, you'll be working on generics to allow your list classes to handle any type of object.
+### Objective:
+The goal of this assignment is to implement and work with different types of List data structures in Java. You will be creating a `Song` class and implementing Array-based, Singly Linked, and Doubly Linked lists to store and manipulate data. Additionally, you will implement a version of each list that uses generics to handle any type of object.
 
 ---
 
@@ -24,11 +21,13 @@ This assignment involves implementing different types of lists and manipulating 
 ## 1. Song Class
 
 ### Description:
-The `Song` class represents a song in Spotify. The class includes the following attributes:
-- `title` (String)
-- `artist` (String)
-- `length` (double) - the length of the song in minutes.
+The `Song` class represents a song object, containing information such as the title, artist, and length (in minutes). This class is used throughout the assignment to represent individual songs.
 
-### Example Instance:
+### Attributes:
+- `title` (String): The name of the song.
+- `artist` (String): The artist of the song.
+- `length` (double): The length of the song in minutes.
+
+### Example:
 ```java
 Song song1 = new Song("El Pibe De Mi Barrio", "Dr. Krapula", 2.47);

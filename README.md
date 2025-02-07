@@ -3,7 +3,7 @@
 ## Deadline: Saturday, February 15, 2024, 9:59 PM
 
 ### Objective:
-The goal of this assignment is to implement and work with different types of List data structures in Java. You will be creating a `Song` class and implementing Array-based, Singly Linked, and Doubly Linked lists to store and manipulate data. Additionally, you will implement a version of each list that uses generics to handle any type of object.
+The goal of this assignment is to implement and work with different types of List data structures in Java. By creating a `Song` class and implementing Array-based, Singly Linked, and Doubly Linked lists to store and manipulate data. Additionally, you will implement a version of each list that uses generics to handle any type of object.
 
 ---
 

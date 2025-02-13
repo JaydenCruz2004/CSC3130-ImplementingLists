@@ -1,10 +1,14 @@
 # Assignment 3 - Implementing Lists
 
+## Objectives
+
+The objective of this assignment is to familiarize with List data structures, including Array-based lists, Singly Linked Lists, and Doubly Linked Lists, as well as implementing generics for reusability.
+
 ## Overview
 
-This repository contains the implementation of Assignment 3 - Implementing Lists for [CSC-3130]. The objective of this assignment is to familiarize with List data structures, including Array-based lists, Singly Linked Lists, and Doubly Linked Lists, as well as implementing generics for reusability.
+This project involves implementing different types of list data structures in Java. It includes creating a `Song` class, implementing an **Array-based List (AList)**, a **Singly Linked List (SLList)**, and a **Doubly Linked List (DLList)**. Additionally, generic versions of these lists will be developed to support multiple data types. A testing class is also included for extra credit.
 
-## Due Date
+## Deadline
 
 **Saturday, February 15, 2024, 9:59 PM**
 
@@ -111,6 +115,7 @@ A **Main.java** class to test all the implemented data structures with multiple 
 
 ## Author
 
-**Author:** Jayden Cruz **Course:** CSC 31030: Intro to Algorithms\
+*Jayden Cruz* 
+**Course:** CSC 3130: Intro to Algorithms\
 **University:** Belmont University
 

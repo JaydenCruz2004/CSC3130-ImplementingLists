@@ -2,7 +2,7 @@
 
 ## Overview
 
-This repository contains the implementation of Assignment 3 - Implementing Lists for [Course Name]. The objective of this assignment is to familiarize with List data structures, including Array-based lists, Singly Linked Lists, and Doubly Linked Lists, as well as implementing generics for reusability.
+This repository contains the implementation of Assignment 3 - Implementing Lists for [CSC-3130]. The objective of this assignment is to familiarize with List data structures, including Array-based lists, Singly Linked Lists, and Doubly Linked Lists, as well as implementing generics for reusability.
 
 ## Due Date
 

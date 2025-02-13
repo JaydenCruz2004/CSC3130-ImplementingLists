@@ -109,12 +109,8 @@ A **Main.java** class to test all the implemented data structures with multiple 
 | **Extra Credit** (Testing Class) | 5      |
 | **Total**                        | 100    |
 
-## Contact
+## Author
 
-For any questions regarding the assignment, please reach out to the course instructor or TA.
-
----
-
-**Author:** Jayden Cruz **Course:** Intro to Algorithms\
+**Author:** Jayden Cruz **Course:** CSC 31030: Intro to Algorithms\
 **University:** Belmont University
 

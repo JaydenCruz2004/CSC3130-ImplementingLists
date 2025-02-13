@@ -1,32 +1,120 @@
-# Assignment 3 – Implementing Lists
+# Assignment 3 - Implementing Lists
 
 ## Overview
-This project involves implementing three types of lists in Java to work with a Song class. The project covers implementing an Array-based List, Singly Linked List, and Doubly Linked List. Additionally, the project involves creating generic versions of these lists, enabling them to handle any type of object, not just Song instances.
 
-## Objectives
-The goal of this assignment is to familiarize with the basics of List data structures, such as:
-- Creation of lists
-- Adding elements
-- Removing elements
-- Traversal of lists
+This repository contains the implementation of Assignment 3 - Implementing Lists for [Course Name]. The objective of this assignment is to familiarize with List data structures, including Array-based lists, Singly Linked Lists, and Doubly Linked Lists, as well as implementing generics for reusability.
 
-## Structure
-This project consists of the following components:
+## Due Date
 
-1. **Song Class**: A class representing a song with attributes such as title, artist, and length.
-2. **AList (Array-based List)**: An array-based list that can store Book instances, with methods to add, remove, and print elements.
-3. **SLList (Singly Linked List)**: A singly linked list that stores Song instances, with methods to add, remove, and print elements.
-4. **DLList (Doubly Linked List)**: A doubly linked list that stores Song instances, with methods to add, remove, and print elements.
-5. **Generics Implementation**: The AList, SLList, and DLList are implemented using generics, making them flexible to work with any type of object.
+**Saturday, February 15, 2024, 9:59 PM**
 
-## Requirements
+## Project Structure
 
-### 1. Song Class
-Create a class to represent a song in Spotify with the following attributes:
-- **title** (String)
-- **artist** (String)
-- **length** (double)
+The project is implemented in **Java** using **IntelliJ IDEA**.
 
-Example:
-```java
-Song song1 = new Song("El Pibe De Mi Barrio", "Dr. Krapula", 2.47);
+### Folder Structure:
+
+```
+.
+├── src
+│   ├── Song.java               # Class representing a song
+│   ├── AList.java              # Array-based list implementation
+│   ├── SLNode.java             # Node for Singly Linked List
+│   ├── SLList.java             # Singly Linked List implementation
+│   ├── DLNode.java             # Node for Doubly Linked List
+│   ├── DLList.java             # Doubly Linked List implementation
+│   ├── GenericAList.java       # Generic implementation of AList
+│   ├── GenericSLList.java      # Generic implementation of SLList
+│   ├── GenericDLList.java      # Generic implementation of DLList
+│   ├── Main.java               # Testing class (Extra Credit)
+└── README.md                   # Project documentation
+```
+
+## Implemented Features
+
+### 1. **Song Class** (7 points)
+
+A simple Java class representing a song with the following attributes:
+
+- `title` (String)
+- `artist` (String)
+- `length` (double)
+
+### 2. **AList (Array-based List)** (20 points)
+
+Implemented an array-based list that stores **Song** instances, supporting:
+
+- Constructor to create an empty list
+- `addy(Song p)`: Adds a new song, resizing the list when necessary
+- `removy(int pos)`: Removes the song at a specific position
+- `toString()`: Returns a formatted string of all songs in the list
+
+### 3. **SLList (Singly Linked List)** (20 points)
+
+Implemented a **singly linked list** storing **Song** instances, with:
+
+- Constructor initializing an empty list
+- `addy(Song s)`: Adds a song to the end
+- `removy(int pos)`: Removes a song from a specific position
+- `toString()`: Returns a formatted string of all songs
+
+### 4. **DLList (Doubly Linked List)** (20 points)
+
+Implemented a **doubly linked list** storing **Song** instances, with:
+
+- Constructor initializing an empty list
+- `addy(Song s)`: Adds a song to the end
+- `removy(int pos)`: Removes a song from a specific position
+- `toString()`: Returns a formatted string of all songs
+
+### 5. **Generic Implementations** (33 points)
+
+Implemented **AList, SLList, and DLList** as **generic classes** to work with any type of object.
+
+- Generic `AList<T>`
+- Generic `SLList<T>`
+- Generic `DLList<T>`
+
+### 6. **Extra Credit - Testing Class** (5 points)
+
+A **Main.java** class to test all the implemented data structures with multiple test cases.
+
+## Compilation & Execution
+
+1. Clone the repository:
+   ```sh
+   git clone <repository_url>
+   ```
+2. Open the project in **IntelliJ IDEA**.
+3. Compile and run **Main.java** to test the implementations.
+
+## Submission Instructions
+
+- Ensure the **GitHub repository link** is correctly submitted on **Canvas** before the deadline.
+- The repository should contain:
+  - **Java source code**
+  - **A PDF with answers to text-based problems**
+  - **README.md** (this file)
+- Make sure the code **compiles successfully** to avoid penalties.
+
+## Grading Rubric
+
+| Item                             | Points |
+| -------------------------------- | ------ |
+| Song Class                       | 7      |
+| AList (Array List)               | 20     |
+| SLList (Singly LL)               | 20     |
+| DLList (Doubly LL)               | 20     |
+| Generics (AList, SLList, DLList) | 33     |
+| **Extra Credit** (Testing Class) | 5      |
+| **Total**                        | 100    |
+
+## Contact
+
+For any questions regarding the assignment, please reach out to the course instructor or TA.
+
+---
+
+**Author:** Jayden Cruz **Course:** Intro to Algorithms\
+**University:** Belmont University
+

@@ -45,21 +45,26 @@ public class AList {
     }
     public static void main(String[] args) {
         AList list = new AList();
-        list.addy(new Song("El Pibe De Mi Barrio", "Dr. Krapula", 2.47));
-        list.addy(new Song("505", "Artic Monkeys", 4.14));
-        list.addy(new Song("NADIE", "Tito Double P", 3.17));
-        list.addy(new Song("DtMF", "Bad Bunny", 3.57));
+
+        System.out.println("Empty AList:"+ list.toString());
+
+        Song song1 = new Song("El Pibe De Mi Barrio", "Dr. Krapula", 2.47);
+        Song song2 = new Song("505", "Arctic Monkeys", 4.14);
+        Song song3 = new Song("NADIE", "Tito Double P", 3.17);
+        Song song4 = new Song("DtMF", "Bad Bunny", 3.57);
+
+        list.addy(song1);
+        list.addy(song2);
+        list.addy(song3);
+        list.addy(song4);
 
         System.out.println("Songs AList:");
         System.out.println(list.toString());
 
         list.removy(3);
         list.removy(1);
-        System.out.println("Songs AList after removing song @ index 1 and 3:");
+        System.out.println("Songs AList after removing song @ index 3 then 1:");
         System.out.println(list.toString());
     }
-
-
-
 
 }

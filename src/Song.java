@@ -13,7 +13,6 @@ public class Song {
     public Song(){
 
     }
-
     public String toString() {
         return "songName: " + title + ", artist: " + artist + ", length: " + length;
     }

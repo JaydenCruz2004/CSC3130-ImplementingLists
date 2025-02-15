@@ -63,9 +63,9 @@ public class SLList {
     }
 
     public static void main(String[] args) {
-        DLList list = new DLList();
+        SLList list = new SLList();
 
-        System.out.println("Empty DLList:" + list.toString());
+        System.out.println("Empty SLList:" + list.toString());
 
         Song song1 = new Song("El Pibe De Mi Barrio", "Dr. Krapula", 2.47);
         Song song2 = new Song("505", "Arctic Monkeys", 4.14);
@@ -77,12 +77,12 @@ public class SLList {
         list.addy(song3);
         list.addy(song4);
 
-        System.out.println("Songs DLList:");
+        System.out.println("Songs SLList:");
         System.out.println(list.toString());
 
         list.removy(3);
         list.removy(1);
-        System.out.println("Songs DLList after removing song @ index 3 then 1:");
+        System.out.println("Songs SLList after removing song @ index 3 then 1:");
         System.out.println(list.toString());
     }
 }

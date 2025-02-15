@@ -1,12 +1,12 @@
-public class DLNode {
-    Song song;
-    DLNode next;
-    DLNode prev;
+public class DLNode<T> {
+    T data;
+    DLNode<T> next;
+    DLNode<T> prev;
 
 
 
-    public DLNode(Song song) {
-        this.song = song;
+    public DLNode(T data) {
+        this.data = data;
         this.next = null;
         this.prev = null;
     }

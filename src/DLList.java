@@ -1,18 +1,20 @@
-public class DLList {
-    private DLNode head;
-    private DLNode tail;
+public class DLList<T> {
+    private DLNode<T> head;
+    private DLNode<T> tail;
 
     public DLList() {
         this.head = null;
         this.tail = null;
 
     }
-    public DLList(DLNode head, DLNode tail) {
+
+    public DLList(DLNode<T> head, DLNode<T> tail) {
         this.head = head;
         this.tail = tail;
     }
-    public void addy(Song s) {
-        DLNode newNode = new DLNode(s);
+
+    public void addy(T data) {
+        DLNode<T> newNode = new DLNode<T>(data);
         if (head == null) {
             head = newNode;
             tail = newNode;
@@ -25,11 +27,11 @@ public class DLList {
 
     public void removy(int pos) {
         if (head == null || pos < 0) {
-            System.out.println("Invalid position");
+            System.out.println("Invalid position: " + pos);
             return;
         }
 
-        DLNode current = head;
+        DLNode<T> current = head;
         int index = 0;
 
         while (current != null && index < pos) {
@@ -38,7 +40,7 @@ public class DLList {
         }
 
         if (current == null) {
-            System.out.println("Position out of bounds");
+            System.out.println("Position out of bounds: " + pos);
             return;
         }
 
@@ -56,16 +58,16 @@ public class DLList {
 
     public String toString() {
         StringBuilder sb = new StringBuilder();
-        DLNode current = head;
+        DLNode<T> current = head;
         while (current != null) {
-            sb.append(current.song.toString()).append("\n");
+            sb.append(current.data.toString()).append("\n");
             current = current.next;
         }
         return sb.toString();
     }
 
     public static void main(String[] args) {
-        DLList list = new DLList();
+        DLList<Song> list = new DLList<>();
 
         System.out.println("Empty DLList:" + list.toString());
 

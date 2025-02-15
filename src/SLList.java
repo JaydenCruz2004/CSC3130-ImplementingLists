@@ -1,21 +1,21 @@
-public class SLList {
+public class SLList<T> {
 
-    private SLNode head;
+    private SLNode<T> head;
 
     public SLList() {
         this.head = null;
     }
 
-    public SLList(SLNode head) {
+    public SLList(SLNode<T> head) {
         this.head = head;
     }
 
-    public void addy(Song s) {
-        SLNode newNode = new SLNode(s);
+    public void addy(T item) {
+        SLNode<T> newNode = new SLNode<>(item);
         if (head == null) {
             head = newNode;
         } else {
-            SLNode current = head;
+            SLNode<T> current = head;
             while (current.next != null) {
                 current = current.next;
             }
@@ -25,7 +25,7 @@ public class SLList {
 
     public void removy(int pos) {
         if (head == null || pos < 0) {
-            System.out.println("Invalid position");
+            System.out.println("Invalid position"+ pos) ;
             return;
         }
 
@@ -34,8 +34,8 @@ public class SLList {
             return;
         }
 
-        SLNode current = head;
-        SLNode prev = null;
+        SLNode<T> current = head;
+        SLNode<T> prev = null;
         int index = 0;
 
         while (current != null && index < pos) {
@@ -45,7 +45,7 @@ public class SLList {
         }
 
         if (current == null) {
-            System.out.println("Position out of bounds");
+            System.out.println("Position out of bounds" + pos);
             return;
         }
 
@@ -54,23 +54,23 @@ public class SLList {
 
     public String toString() {
         StringBuilder sb = new StringBuilder();
-        SLNode current = head;
+        SLNode<T> current = head;
         while (current != null) {
-            sb.append(current.song.toString()).append("\n");
+            sb.append(current.data.toString()).append("\n");
             current = current.next;
         }
         return sb.toString();
     }
 
     public static void main(String[] args) {
-        SLList list = new SLList();
+        SLList<Object> list = new SLList<>();
 
         System.out.println("Empty SLList:" + list.toString());
 
-        Song song1 = new Song("El Pibe De Mi Barrio", "Dr. Krapula", 2.47);
-        Song song2 = new Song("505", "Arctic Monkeys", 4.14);
-        Song song3 = new Song("NADIE", "Tito Double P", 3.17);
-        Song song4 = new Song("DtMF", "Bad Bunny", 3.57);
+        Object song1 = new Song("El Pibe De Mi Barrio", "Dr. Krapula", 2.47);
+        Object song2 = new Song("505", "Arctic Monkeys", 4.14);
+        Object song3 = new Song("NADIE", "Tito Double P", 3.17);
+        Object song4 = new Song("DtMF", "Bad Bunny", 3.57);
 
         list.addy(song1);
         list.addy(song2);

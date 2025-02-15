@@ -22,7 +22,7 @@ public class AList<T> {
         if (pos < 0 || pos >= size) {
             throw new IndexOutOfBoundsException("index out of bounds: " + pos);
         }
-        for (int i = pos; i < size; i++) {
+        for (int i = pos; i < size - 1; i++) {
             obs[i] = obs[i + 1];
         }
         obs[--size] = null;

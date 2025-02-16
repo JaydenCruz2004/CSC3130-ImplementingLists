@@ -63,14 +63,14 @@ public class SLList<T> {
     }
 
     public static void main(String[] args) {
-        SLList<Object> list = new SLList<>();
+        SLList<Song> list = new SLList<>();
 
         System.out.println("Empty SLList:" + list.toString());
 
-        Object song1 = new Song("El Pibe De Mi Barrio", "Dr. Krapula", 2.47);
-        Object song2 = new Song("505", "Arctic Monkeys", 4.14);
-        Object song3 = new Song("NADIE", "Tito Double P", 3.17);
-        Object song4 = new Song("DtMF", "Bad Bunny", 3.57);
+        Song song1 = new Song("El Pibe De Mi Barrio", "Dr. Krapula", 2.47);
+        Song song2 = new Song("505", "Arctic Monkeys", 4.14);
+        Song song3 = new Song("NADIE", "Tito Double P", 3.17);
+        Song song4 = new Song("DtMF", "Bad Bunny", 3.57);
 
         list.addy(song1);
         list.addy(song2);

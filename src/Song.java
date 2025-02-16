@@ -38,4 +38,13 @@ public class Song {
     public void setLength(double length) {
         this.length = length;
     }
+    public static void main(String[] args) {
+        Song song1 = new Song("El Pibe De Mi Barrio", "Dr. Krapula", 2.47);
+        Song song2 = new Song("505", "Arctic Monkeys", 4.14);
+        Song song3 = new Song("NADIE", "Tito Double P", 3.17);
+        Song song4 = new Song("DtMF", "Bad Bunny", 3.57);
+
+        System.out.println(song1.toString());
+        System.out.println(song4.toString());
+    }
 }

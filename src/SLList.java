@@ -25,7 +25,7 @@ public class SLList<T> {
 
     public void removy(int pos) {
         if (head == null || pos < 0) {
-            System.out.println("Invalid position"+ pos) ;
+            System.out.println("Invalid position: "+ pos) ;
             return;
         }
 
@@ -45,7 +45,7 @@ public class SLList<T> {
         }
 
         if (current == null) {
-            System.out.println("Position out of bounds" + pos);
+            System.out.println("Position out of bounds: " + pos);
             return;
         }
 
@@ -53,6 +53,10 @@ public class SLList<T> {
     }
 
     public String toString() {
+        if( head == null ){
+            return "Empty SLList: ";
+        }
+
         StringBuilder sb = new StringBuilder();
         SLNode<T> current = head;
         while (current != null) {
@@ -65,7 +69,8 @@ public class SLList<T> {
     public static void main(String[] args) {
         SLList<Song> list = new SLList<>();
 
-        System.out.println("Empty SLList:" + list.toString());
+        //prints empty
+        System.out.println(list.toString());
 
         Song song1 = new Song("El Pibe De Mi Barrio", "Dr. Krapula", 2.47);
         Song song2 = new Song("505", "Arctic Monkeys", 4.14);

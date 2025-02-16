@@ -14,7 +14,7 @@ public class DLList<T> {
     }
 
     public void addy(T data) {
-        DLNode<T> newNode = new DLNode<T>(data);
+        DLNode<T> newNode = new DLNode<>(data);
         if (head == null) {
             head = newNode;
             tail = newNode;
@@ -57,6 +57,10 @@ public class DLList<T> {
     }
 
     public String toString() {
+        if (head == null && tail == null) {
+            return "Empty DLList: ";
+        }
+
         StringBuilder sb = new StringBuilder();
         DLNode<T> current = head;
         while (current != null) {
@@ -69,7 +73,7 @@ public class DLList<T> {
     public static void main(String[] args) {
         DLList<Song> list = new DLList<>();
 
-        System.out.println("Empty DLList:" + list.toString());
+        System.out.println(list.toString());
 
         Song song1 = new Song("El Pibe De Mi Barrio", "Dr. Krapula", 2.47);
         Song song2 = new Song("505", "Arctic Monkeys", 4.14);

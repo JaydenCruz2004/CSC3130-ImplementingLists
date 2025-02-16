@@ -2,7 +2,7 @@ public class Main {
     public static void main(String[] args) {
         // Test Array List (AList)
         AList<Song> aList = new AList<>();
-        System.out.println("Empty AList: " + aList);
+        System.out.println(aList.toString());
 
         aList.addy(new Song("El Pibe De Mi Barrio", "Dr. Krapula", 2.47));
         aList.addy(new Song("505", "Arctic Monkeys", 4.14));
@@ -19,7 +19,7 @@ public class Main {
 
         // Test Singly Linked List (SLList)
         SLList<Song> slList = new SLList<>();
-        System.out.println("Empty SLList: " + slList);
+        System.out.println(slList.toString());
 
         slList.addy(new Song("El Pibe De Mi Barrio", "Dr. Krapula", 2.47));
         slList.addy(new Song("505", "Arctic Monkeys", 4.14));
@@ -36,7 +36,7 @@ public class Main {
 
         // Test Doubly Linked List (DLList)
         DLList<Song> dlList = new DLList<>();
-        System.out.println("Empty DLList: " + dlList);
+        System.out.println(dlList.toString());
 
         dlList.addy(new Song("El Pibe De Mi Barrio", "Dr. Krapula", 2.47));
         dlList.addy(new Song("505", "Arctic Monkeys", 4.14));

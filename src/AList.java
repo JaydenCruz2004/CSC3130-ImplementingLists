@@ -40,6 +40,9 @@ public class AList<T> {
 
     @Override
     public String toString() {
+        if (size == 0) {
+            return "Empty AList: ";
+        }
         StringBuilder sb = new StringBuilder();
         for (int i = 0; i < size; i++) {
             sb.append(obs[i].toString()).append("\n");
@@ -50,7 +53,7 @@ public class AList<T> {
     public static void main(String[] args) {
         AList<Song> list = new AList<>();
 
-        System.out.println("Empty AList:" + list.toString());
+        System.out.println(list.toString());
 
         Song song1 = new Song("El Pibe De Mi Barrio", "Dr. Krapula", 2.47);
         Song song2 = new Song("505", "Arctic Monkeys", 4.14);

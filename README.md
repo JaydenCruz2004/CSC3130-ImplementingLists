@@ -22,15 +22,13 @@ The project is implemented in **Java** using **IntelliJ IDEA**.
 .
 ├── src
 │   ├── Song.java               # Class representing a song
-│   ├── AList.java              # Array-based list implementation
-│   ├── SLNode.java             # Node for Singly Linked List
-│   ├── SLList.java             # Singly Linked List implementation
-│   ├── DLNode.java             # Node for Doubly Linked List
-│   ├── DLList.java             # Doubly Linked List implementation
-│   ├── GenericAList.java       # Generic implementation of AList
-│   ├── GenericSLList.java      # Generic implementation of SLList
-│   ├── GenericDLList.java      # Generic implementation of DLList
-│   ├── Main.java               # Testing class (Extra Credit)
+│   ├── AList.java              # Generic array-based list implementation
+│   ├── SLNode.java             # Generic node for Singly Linked List
+│   ├── SLList.java             # Generic Singly Linked List implementation
+│   ├── DLNode.java             # Generic node for Doubly Linked List
+│   ├── DLList.java             # Generic Doubly Linked List implementation
+│   ├── Main.java               # Main class to create and run all three lists
+│   ├── Tester.java             # Extra credit testing class
 └── README.md                   # Project documentation
 ```
 

@@ -1,3 +1,6 @@
+// CSC 3130: Intro to Algorithms
+// Assignment 3: Implementing Lists
+// Jayden Cruz
 public class Main {
     public static void main(String[] args) {
         // Test Array List (AList)

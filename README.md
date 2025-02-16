@@ -113,8 +113,7 @@ A **Main.java** class to test all the implemented data structures with multiple 
 
 ## Author
 
-**Jayden Cruz** 
-
+**Author** Jayden Cruz\
 **Course:** CSC 3130: Intro to Algorithms\
 **University:** Belmont University
 
